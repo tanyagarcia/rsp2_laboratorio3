@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSP 2</title>
+    <link type= "text/css" rel = "stylesheet" href = "./css/estilos.css"/>
+    <script src = "persona.js"></script>
+    <script src = "empleado.js"></script>
+    <script src = "funciones.js"></script>
+</head>
+
+<body>
+    <div id= "alta">
+        <h1>ABM Empleados</h1>
+    </div>
+    
+    <label for = "inputNombre">Nombre:</label> <input type = "text" size = "35" id = "inputNombre">
+    <br>
+    <label for= "inputApellido">Apellido:</label> <input type = "text" size = "35" id = "inputApellido">
+    <br>
+    <label for = "inputEdad">Edad:</label> <input type = "number" size = "35" id = "inputEdad">
+    <br>
+    <label for = "inputLegajo">Legajo:</label> <input type = "number" size = "35" id = "inputLegajo">
+    <br>
+    <label for = "comboAlta">Horario:</label> 
+    <select id="comboAlta">
+        <option value="Mañana">Mañana</option>
+        <option value="Noche">Noche</option>
+      </select>
+    <br>
+    <input type = "button" value = "Agregar" id = "btnAgregar"> 
+    <br>
+    <input type = "button" value = "Eliminar" id = "btnEliminar">
+    <br>
+    <input type = "button" value = "Modificar" id = "btnModificar">
+    <br>
+    <div id= "filtros">
+        <h2>Filtros</h2>
+        <label for="comboFiltro">Filtrar por horario</label>
+        <select id="comboFiltro">
+            <option value="Todos">Todos</option>
+            <option value="Mañana">Mañana</option>
+            <option value="Noche">Noche</option>
+          </select>
+        <label>Promedio de edad</label>
+        <input type = "text" size = "35" id = "promedio">
+        <input type = "button" value = "Calcular promedio" id = "btnPromedio">
+        <br>
+
+    </div>
+    <div>  
+        <h2>Campos mostrados: Tildar campos a mostrar</h2>
+        <input type="checkbox" id="nombreCheck" name="nombre" checked> 
+        <label for ="nombreCheck">Nombre</label>
+        <input type="checkbox" id="apellidoCheck" name="apellido" checked> 
+        <label for = "apellidoCheck">Apellido</label>
+        <input type="checkbox" id="edadCheck" name="edad" checked> 
+        <label for= "edadCheck">Edad</label>
+        <input type="checkbox" id="legajoCheck" name="legajo" checked> 
+        <label for = "leajoCheck">Legajo</label>
+        <input type="checkbox" id="horarioCheck" name="legajo" checked> 
+        <label for = "leajoCheck">Horario</label>
+    </div>
+
+    <h2>Lista de personas</h2>
+    <table id = "tabla">
+            <thead>
+                <tr>
+                    <th name = "nombreTabla">Nombre</th>
+                    <th name = "apellidoTabla">Apellido</th>
+                    <th name = "edadTabla">Edad</th>
+                    <th name = "legajoTabla">Legajo</th>
+                    <th name = "horarioTabla">Horario</th>
+                </tr>
+            </thead>
+        <tbody id = "tCuerpo">
+        </tbody>
+    </table>
+    
+</body>
+</html>

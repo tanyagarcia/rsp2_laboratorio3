@@ -1,0 +1,199 @@
+table
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td{
+    text-align: left;
+    padding: 8px;
+}
+
+td
+{
+    cursor: pointer;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th{
+    background-color:#2523aace;
+    color: white;
+}
+
+input[type=text]
+{
+    width: 20%;
+    padding: 8px 16px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type= button]
+{
+    width: 75%;
+    padding: 8px 16px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+input[type=number]
+{
+    width: 20%;
+    padding: 8px 16px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#btnPromedio
+{
+    width: 20%;
+    background-color: rgb(39, 76, 197);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.sinError
+{
+    border: 1px solid #ccc;
+}
+
+.error{
+    border: 1px solid red;
+}
+
+.opcionRojo
+{
+    width: 35%;
+    background-color: #c02721;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[id= btnModificar]:hover{
+    background-color: #45a049;
+}
+
+
+#btnCerrar
+{
+    background-color: rgb(224, 48, 36);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#btnEliminar
+{
+    width: 25%;
+    background-color: rgb(224, 48, 36);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.divCerrar
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#alta
+{
+    display: flex;
+    justify-content: center;
+}
+
+#btnAlta{
+    width: 10%;
+    background-color:  rgb(39, 76, 197);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+#comboAltaSexo
+{
+    width: 50%;
+    padding: 8px 16px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#btnAgregar{
+    width: 20%;
+    background-color:  rgb(39, 76, 197);
+    color: white;
+    padding: 8px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#btnEliminar{
+    width: 20%;
+    background-color:   rgb(39, 76, 197);
+    color: white;
+    padding: 8px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#btnMostrar{
+    width: 20%;
+    background-color:    rgb(39, 76, 197);
+    color: white;
+    padding: 8px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#btnModificar{
+    width: 20%;
+    background-color:   rgb(39, 76, 197);
+    color: white;
+    padding: 8px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+@keyframes aparecer {
+    from{opacity: 0}
+    to{opacity: 1}
+}
